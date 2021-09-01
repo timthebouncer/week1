@@ -1,0 +1,19 @@
+
+.login-wrapper{
+    @apply flex justify-around items-center flex-col bg-gray-100 w-3/12 h-80
+}
+.verify-btn{
+    @apply p-2 border border-indigo-300 rounded
+}
+.verify-btn:focus{
+    @apply focus:bg-blue-500 text-white
+}
+.btn{
+    @apply font-bold py-2 px-4 rounded
+}
+.btn-register{
+    @apply text-blue-300
+}
+.btn-login{
+    @apply bg-blue-500 text-white
+}

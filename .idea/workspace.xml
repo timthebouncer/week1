@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5b301895-65e6-4d17-b586-bd85bef1e539" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/craco.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/alert/message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/verify/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/verify/verify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/views/IndexPage/indexPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/views/LoginPage/loginPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/views/LoginPage/loginPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/views/RegisterPage/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/views/RegisterPage/registerPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1xUIDAm8WC3yULBUgXyggh7dNKo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/views/RegisterPage" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src\pages\views\RegisterPage" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src\pages\views" />
+      <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src\pages\views\LoginPage" />
+      <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src" />
+      <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\public" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b301895-65e6-4d17-b586-bd85bef1e539" name="Default Changelist" comment="" />
+      <created>1630403117621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630403117621</updated>
+      <workItem from="1630403120064" duration="1810000" />
+      <workItem from="1630459163615" duration="24316000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="679" y="305" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1630478873290">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="679" y="305" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630478873290" />
+    <state x="624" y="208" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1630468599888">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="624" y="208" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630468599888" />
+    <state width="1895" height="268" key="GridCell.Tab.0.bottom" timestamp="1630474354692">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1895" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630474354692" />
+    <state width="1895" height="268" key="GridCell.Tab.0.center" timestamp="1630474354692">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1895" height="268" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630474354692" />
+    <state width="1895" height="268" key="GridCell.Tab.0.left" timestamp="1630474354692">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1895" height="268" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630474354692" />
+    <state width="1895" height="268" key="GridCell.Tab.0.right" timestamp="1630474354692">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1895" height="268" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630474354692" />
+    <state x="594" y="195" width="731" height="650" key="find.popup" timestamp="1630467428663">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="594" y="195" width="731" height="650" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630467428663" />
+    <state x="714" y="407" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1630489397783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="714" y="407" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630489397783" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1630478185702">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630478185702" />
+  </component>
+</project>

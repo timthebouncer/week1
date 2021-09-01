@@ -11,7 +11,7 @@ function App() {
 
   const [modal, showModal] = useState(false)
   const [verify, showVerify] = useState(false)
-  const [verifyType, setVerifyType] = useState('')
+
   const [pass, setPass] = useState(false)
 
   return (
@@ -24,12 +24,12 @@ function App() {
       }
       <Switch>
         <Route path='/' exact component={()=>
-          <LoginPage showModal={showModal} verify={verify} showVerify={showVerify} verifyType={verifyType} setVerifyType={setVerifyType}
+          <LoginPage showModal={showModal} verify={verify} showVerify={showVerify}
                      pass={pass}
           />}
         />
-        <Route path='/register' exact component={ Register } />
-        <Route path='/index' exact component={ IndexPage } />
+        <Route path='/register' component={ Register } />
+        <Route path='/index' component={ IndexPage } />
       </Switch>
     </div>
   );

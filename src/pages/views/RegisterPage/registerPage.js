@@ -1,12 +1,11 @@
 import React,{useState} from 'react'
 import axios from "axios";
 import './register.css'
-import { createBrowserHistory } from 'history';
+import { useHistory } from "react-router-dom";
 
-const history = createBrowserHistory();
 
 const Register=()=>{
-
+  let history = useHistory();
   const [userName, setUserName] = useState("")
   const [passWord, setPassWord] = useState("")
 

@@ -1,24 +1,20 @@
 import React, {useState} from 'react'
 import './loginPage.css'
 import { useHistory } from "react-router-dom";
-import axios from "axios";
+import {useForm} from './useForm'
 
 
 
 const LoginPage = props =>{
   let history = useHistory();
-  const [userName, setUserName] = useState("")
-  const [passWord, setPassWord] = useState("")
+  const [values, handleChange] = useForm({username:'',password:''})
   const [verifyType, setVerifyType] = useState('')
-  const {showModal, showVerify, pass} = props
+  const {showVerify, setUserInfo} = props
 
   const login=()=>{
-    let data = {
-      username: userName,
-      password: passWord
-    }
 
-    if(!userName || !passWord){
+    setUserInfo(values)
+    if(!values.username || !values.password){
       alert('請先輸入帳號或密碼')
       return
     }
@@ -30,19 +26,6 @@ const LoginPage = props =>{
     if(verifyType === 'numberVerify'){
       showVerify(true)
     }
-    console.log(pass,'pass')
-    if(pass){
-
-      axios.post('/api/login', data)
-        .then((res)=>{
-          showModal(true)
-          history.push('/index')
-          setTimeout(()=>{
-            showModal(false)
-          },3000)
-        })
-
-    }
   }
 
  const goToRegister=()=>{
@@ -53,9 +36,9 @@ const LoginPage = props =>{
   return(
     <div className="login-wrapper">
          <div className="text-10">登入</div>
-         <div>帳號<input value={userName} onChange={(e)=>{setUserName(e.target.value)}} className="ml-5 w-72" /></div>
-         <div>密碼<input value={passWord} onChange={(e)=>{setPassWord(e.target.value)}} className="ml-5 w-72" type="password" /></div>
-         <div><button id="numberVerify" className="verify-btn" onClick={(e)=>{setVerifyType(e.target.id, e.preventDefault())}}>數字驗證</button></div>
+         <div>帳號<input name="username" value={values.username} onChange={handleChange} className="ml-5 w-72" /></div>
+         <div>密碼<input name="password" value={values.password} onChange={handleChange} className="ml-5 w-72" type="password" /></div>
+         <div><button id="numberVerify" className="verify-btn" onClick={(e)=>{setVerifyType(e.target.id)}}>數字驗證</button></div>
          <div><button className="btn btn-register" onClick={goToRegister}>註冊</button></div>
          <div><button className="btn btn-login" onClick={login}>登入</button></div>
 

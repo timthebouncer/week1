@@ -1,3 +1,10 @@
 .verify{
    @apply bg-blue-100 z-50 w-96 h-60 absolute
 }
+.selectedStyle{
+   @apply border border-red-500 rounded-2xl
+
+}
+.setPointer{
+   @apply cursor-pointer
+}

@@ -2,24 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b301895-65e6-4d17-b586-bd85bef1e539" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/craco.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/alert/message.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/verify/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/verify/verify.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/views/IndexPage/indexPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/views/LoginPage/loginPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/views/LoginPage/loginPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/views/RegisterPage/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/views/RegisterPage/registerPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/header/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/views/404NotFound/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/views/LoginPage/useForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/views/NewsPage/newsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/alert/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/alert/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/verify/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/verify/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/verify/verify.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/verify/verify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/views/LoginPage/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/views/LoginPage/loginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/views/RegisterPage/registerPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/views/RegisterPage/registerPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +57,7 @@
       <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src\pages\views\RegisterPage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src\component" />
       <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src\pages\views" />
       <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src\pages\views\LoginPage" />
       <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src" />
@@ -95,12 +90,26 @@
       <option name="presentableId" value="Default" />
       <updated>1630403117621</updated>
       <workItem from="1630403120064" duration="1810000" />
-      <workItem from="1630459163615" duration="24316000" />
+      <workItem from="1630459163615" duration="26346000" />
+      <workItem from="1630545377716" duration="19105000" />
+      <workItem from="1630633077257" duration="16112000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(第一周): 1.登入/註冊API串接2.切版3.路由4.驗證碼">
+      <created>1630489612869</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1630489612870</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(第一周): 1.登入/註冊API串接2.切版3.路由4.驗證碼" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(第一周): 1.登入/註冊API串接2.切版3.路由4.驗證碼" />
   </component>
   <component name="WindowStateProjectService">
     <state x="679" y="305" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1630478873290">
@@ -111,33 +120,49 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="624" y="208" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630468599888" />
-    <state width="1895" height="268" key="GridCell.Tab.0.bottom" timestamp="1630474354692">
+    <state x="493" y="37" key="CommitChangelistDialog2" timestamp="1630489612318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1895" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630474354692" />
-    <state width="1895" height="268" key="GridCell.Tab.0.center" timestamp="1630474354692">
+    <state x="493" y="37" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630489612318" />
+    <state x="184" y="85" key="DiffContextDialog" timestamp="1630489474539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1895" height="268" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630474354692" />
-    <state width="1895" height="268" key="GridCell.Tab.0.left" timestamp="1630474354692">
+    <state x="184" y="85" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630489474539" />
+    <state width="1895" height="268" key="GridCell.Tab.0.bottom" timestamp="1630634180800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1895" height="268" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630474354692" />
-    <state width="1895" height="268" key="GridCell.Tab.0.right" timestamp="1630474354692">
+    <state width="1895" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630634180800" />
+    <state width="1895" height="268" key="GridCell.Tab.0.center" timestamp="1630634180799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1895" height="268" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630474354692" />
-    <state x="594" y="195" width="731" height="650" key="find.popup" timestamp="1630467428663">
+    <state width="1895" height="268" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630634180799" />
+    <state width="1895" height="268" key="GridCell.Tab.0.left" timestamp="1630634180799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="594" y="195" width="731" height="650" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630467428663" />
+    <state width="1895" height="268" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630634180799" />
+    <state width="1895" height="268" key="GridCell.Tab.0.right" timestamp="1630634180799">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1895" height="268" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630634180799" />
+    <state x="452" y="189" key="Vcs.Push.Dialog.v2" timestamp="1630489616925">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630489616925" />
+    <state x="594" y="195" width="731" height="650" key="find.popup" timestamp="1630653385387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="594" y="195" width="731" height="650" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630653385387" />
     <state x="714" y="407" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1630489397783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="407" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630489397783" />
-    <state x="532" y="237" key="run.anything.popup" timestamp="1630478185702">
+    <state x="532" y="237" key="run.anything.popup" timestamp="1630663824673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630478185702" />
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630663824673" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1630663963237">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630663963237" />
   </component>
 </project>

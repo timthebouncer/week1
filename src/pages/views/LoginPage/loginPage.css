@@ -1,6 +1,6 @@
 
 .login-wrapper{
-    @apply flex justify-around items-center flex-col bg-gray-100 w-3/12 h-80
+    @apply flex justify-around items-center flex-col bg-gray-100 h-80
 }
 .verify-btn{
     @apply p-2 border border-indigo-300 rounded

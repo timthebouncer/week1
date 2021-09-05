@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import axios from "axios";
 import './register.css'
 import { useHistory } from "react-router-dom";
+import Input from "../../../component/input/input";
 
 
 
@@ -79,27 +80,30 @@ const Register=props=>{
   }
 
   return(
-      <div className="register-wrapper">
-        <div className="ml-5">*帳號
-          <input onBlur={handleBlur} value={userName} onChange={(e)=>{setUserName(e.target.value); validator(e.target.value)}}
-             className="ml-5 w-60" />
-        {
-          showMessage1?<p className="-mb-6 ml-24 text-red-500 text-sm">帳號格式錯誤，必須是信箱</p>:''
-        }
-        </div>
-        <div className="ml-5">*密碼<input onBlur={handleBlur} value={passWord} onChange={(e)=>{setPassWord(e.target.value);validator('',e.target.value)}}
-                                       className="ml-5 w-60" type="password" />
-        {
-          showMessage2?<p className="-mb-6 ml-36 text-red-500 text-sm">密碼錯誤</p>:''
-        }
-        </div>
-        <div>*確認密碼<input onBlur={handleBlur} value={passWordAgain} onChange={(e)=>{setPassWordAgain(e.target.value);
-        validator('','',e.target.value)}}
-                         className="ml-2 w-60" type="password" />
-        {
-          showMessage3?<p className="-mb-6 ml-40 text-red-500 text-sm">與密碼不一致</p>:''
-        }
-        </div>
+      <div className="register-wrapper min-w-300">
+          <Input name="user" />
+          <Input name="password" />
+          <Input name="passwordAgain" />
+        {/*<div className="ml-5">*帳號*/}
+        {/*  <input onBlur={handleBlur} value={userName} onChange={(e)=>{setUserName(e.target.value); validator(e.target.value)}}*/}
+        {/*     className="ml-5 w-60" />*/}
+        {/*{*/}
+        {/*  showMessage1?<p className="-mb-6 ml-24 text-red-500 text-sm">帳號格式錯誤，必須是信箱</p>:''*/}
+        {/*}*/}
+        {/*</div>*/}
+        {/*<div className="ml-5">*密碼<input onBlur={handleBlur} value={passWord} onChange={(e)=>{setPassWord(e.target.value);validator('',e.target.value)}}*/}
+        {/*                               className="ml-5 w-60" type="password" />*/}
+        {/*{*/}
+        {/*  showMessage2?<p className="-mb-6 ml-36 text-red-500 text-sm">密碼錯誤</p>:''*/}
+        {/*}*/}
+        {/*</div>*/}
+        {/*<div>*確認密碼<input onBlur={handleBlur} value={passWordAgain} onChange={(e)=>{setPassWordAgain(e.target.value);*/}
+        {/*validator('','',e.target.value)}}*/}
+        {/*                 className="ml-2 w-60" type="password" />*/}
+        {/*{*/}
+        {/*  showMessage3?<p className="-mb-6 ml-40 text-red-500 text-sm">與密碼不一致</p>:''*/}
+        {/*}*/}
+        {/*</div>*/}
         <div><button className="btn btn-backToLogin" onClick={bachToLogin}>返回登入</button></div>
         <div><button className="btn btn-registerPage" onClick={registerBtn}>註冊</button></div>
       </div>

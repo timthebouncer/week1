@@ -6,7 +6,11 @@ module.exports = {
       center:true,
       // padding:'2rem'
     },
-    extend: {},
+    extend: {
+      minWidth: {
+        '300': '500px',
+      }
+    },
   },
   variants: {
     extend: {},

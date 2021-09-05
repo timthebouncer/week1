@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b301895-65e6-4d17-b586-bd85bef1e539" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/header/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/views/404NotFound/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/views/LoginPage/useForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/views/NewsPage/newsPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/input/input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/route/route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/useContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/alert/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/alert/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/verify/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/verify/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/verify/verify.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/verify/verify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/views/LoginPage/loginPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/views/LoginPage/loginPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/views/LoginPage/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/views/LoginPage/loginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/views/RegisterPage/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/views/RegisterPage/register.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/views/RegisterPage/registerPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/views/RegisterPage/registerPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,15 +53,15 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src\pages\views\RegisterPage" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src\component" />
       <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src\pages\views" />
       <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src\pages\views\LoginPage" />
       <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src" />
       <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tim.wty\Desktop\sideproject\week1\src\pages\views\RegisterPage" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -93,6 +93,7 @@
       <workItem from="1630459163615" duration="26346000" />
       <workItem from="1630545377716" duration="19105000" />
       <workItem from="1630633077257" duration="16112000" />
+      <workItem from="1630818109580" duration="21700000" />
     </task>
     <task id="LOCAL-00001" summary="feat(第一周): 1.登入/註冊API串接2.切版3.路由4.驗證碼">
       <created>1630489612869</created>
@@ -128,37 +129,43 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="85" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630489474539" />
-    <state width="1895" height="268" key="GridCell.Tab.0.bottom" timestamp="1630634180800">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1630819946796">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1630819946796" />
     <state width="1895" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630634180800" />
-    <state width="1895" height="268" key="GridCell.Tab.0.center" timestamp="1630634180799">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1630819946796">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1630819946796" />
     <state width="1895" height="268" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630634180799" />
-    <state width="1895" height="268" key="GridCell.Tab.0.left" timestamp="1630634180799">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1630819946796">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1630819946796" />
     <state width="1895" height="268" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630634180799" />
-    <state width="1895" height="268" key="GridCell.Tab.0.right" timestamp="1630634180799">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1630819946796">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1630819946796" />
     <state width="1895" height="268" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630634180799" />
     <state x="452" y="189" key="Vcs.Push.Dialog.v2" timestamp="1630489616925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="452" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630489616925" />
-    <state x="594" y="195" width="731" height="650" key="find.popup" timestamp="1630653385387">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="475" y="155" width="585" height="536" key="find.popup" timestamp="1630847605144">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="475" y="155" width="585" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1630847605144" />
     <state x="594" y="195" width="731" height="650" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630653385387" />
     <state x="714" y="407" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1630489397783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="407" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630489397783" />
-    <state x="532" y="237" key="run.anything.popup" timestamp="1630663824673">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="426" y="188" key="run.anything.popup" timestamp="1630853964670">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="426" y="188" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1630853964670" />
     <state x="532" y="237" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630663824673" />
     <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1630663963237">
       <screen x="0" y="0" width="1920" height="1040" />

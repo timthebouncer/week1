@@ -1,6 +1,6 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState,useEffect, useContext} from 'react'
 import './App.css';
-import { Route, Switch,  withRouter} from 'react-router-dom'
+import { Router, Switch,  withRouter} from 'react-router-dom'
 import LoginPage from './pages/views/LoginPage/loginPage'
 import Register from "./pages/views/RegisterPage/registerPage";
 import Message from "./component/alert/message";
@@ -10,6 +10,8 @@ import HeaderPage from "./component/header/header";
 import axios from 'axios'
 import NewsPage from "./pages/views/NewsPage/newsPage";
 import NotFound from "./pages/views/404NotFound";
+import {UserContext} from "./store/useContext";
+import Routes from "./route/route";
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
   const [alertMessage, setAlertMessage] = useState('')
   const [login, setLogin] = useState(false)
   const [auth, setAuth] = useState(false)
+
 
 
   useEffect(()=>{
@@ -55,18 +58,23 @@ function App() {
                                     setLogin={setLogin}
           />:''
         }
-        <Switch>
-          <Route path='/' exact component={()=>
-            <LoginPage setUserInfo={setUserInfo} verify={verify} showVerify={showVerify}/>}
-          />
-          <Route path='/register' component={()=> <Register showModal={showModal} setAlertMessage={setAlertMessage} />} />
-          <Route path='/index' component={ IndexPage } />
-          <Route path='/news' component={ NewsPage } />
-          <Route path='/*' component={ NotFound } />
-        </Switch>
+        <Routes setUserInfo={setUserInfo} showVerify={showVerify} showModal={showModal} setAlertMessage={setAlertMessage}
+          auth={auth}
+        />
+        {/*<Switch>*/}
+        {/*  <UserContext.Provider value={test}>*/}
+        {/*    <Route path='/' exact component={()=>*/}
+        {/*        <LoginPage setUserInfo={setUserInfo} verify={verify} showVerify={showVerify}/>}*/}
+        {/*    />*/}
+        {/*    <Route path='/register' component={()=> <Register showModal={showModal} setAlertMessage={setAlertMessage} />} />*/}
+        {/*    <Route path='/index' component={ IndexPage } />*/}
+        {/*    <Route path='/news' component={ NewsPage } />*/}
+        {/*    <Route path='/123' component={ NotFound } />*/}
+        {/*  </UserContext.Provider>*/}
+        {/*</Switch>*/}
       </div>
     </div>
   );
 }
 
-export default withRouter(App);
+export default App;

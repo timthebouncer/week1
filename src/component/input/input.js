@@ -1,12 +1,15 @@
 import React, {useState} from 'react'
 
 const Input=props=>{
-    const {name} = props
-    let whichInput = name === 'user' ? <div>帳號<input /></div>: (name === 'password' ?
-        <div>密碼<input type="password"/></div>:<div>確認密碼<input type="password"/></div>)
+    console.log(props.value)
+    const {value, setForm}=props
+    // const [values, setValues] = useState(props.value)
+
     return(
         <div>
-            {whichInput}
+            {/*<input onChange={[value, e=> {*/}
+            {/*    setForm({...value, [e.target.name]: e.target.value})*/}
+            {/*}]} />*/}
         </div>
     )
 }

@@ -3,10 +3,10 @@ import axios from "axios";
 import './register.css'
 import { useHistory } from "react-router-dom";
 import Input from "../../../component/input/input";
-
-
 import Form from "../../../component/form/index";
 import TextInput from "../../../component/form/input";
+
+
 
 const requiredValidator = val => {
   if (!val) {
@@ -24,125 +24,129 @@ const passwordMatchedValidator = (val, formData) => {
   return [];
 };
 
-const Register=()=> {
-  return (
-      <div className="App">
-        <h1>登入</h1>
-        <div className="sign-up">
-          <Form onSubmit={data => console.log(data,123)}>
-            <TextInput
-                name="username"
-                validators={[requiredValidator]}
-                placeholder="account"
-                label="帳號"
-            />
-            <TextInput
-                name="password"
-                type="password"
-                validators={[requiredValidator]}
-                placeholder="****"
-                label="密碼"
-            />
-            <TextInput
-                name="password_confirmation"
-                type="password"
-                validators={[requiredValidator, passwordMatchedValidator]}
-                placeholder="****"
-                label="確認密碼"
-            />
 
+
+
+const Register=props=>{
+  let history = useHistory()
+  const bachToLogin=()=>{
+    history.push('/')
+  }
+    return (
+      <div className="App">
+        <h1>Sign up</h1>
+        <div className="sign-up">
+          <Form onSubmit={data => console.log(data)}>
+            <TextInput
+              name="username"
+              validators={[requiredValidator]}
+              placeholder="請輸入帳號"
+              label="帳號"
+            />
+            <TextInput
+              name="password"
+              type="password"
+              validators={[requiredValidator]}
+              placeholder="請輸入密碼"
+              label="密碼"
+            />
+            <TextInput
+              name="password_confirmation"
+              type="password"
+              validators={[requiredValidator, passwordMatchedValidator]}
+              placeholder="請確認密碼"
+              label="確認密碼"
+            />
+            <div><button className="btn btn-backToLogin" onClick={bachToLogin}>返回登入</button></div>
             <button className="submit-btn" type="submit">
               登入
             </button>
+
           </Form>
         </div>
       </div>
-  );
-}
+    );
 
 
 
 
-// const Register=props=>{
-//   let history = useHistory();
-//   const {showModal, setAlertMessage} = props
+  // let history = useHistory();
+  // const {showModal, setAlertMessage} = props
   // const [userName, setUserName] = useState("")
   // const [passWord, setPassWord] = useState("")
   // const [passWordAgain, setPassWordAgain] = useState("")
   // const [showMessage1, setMessage] = useState(false)
   // const [showMessage2, setMessage2] = useState(false)
   // const [showMessage3, setMessage3] = useState(false)
-  // const [form, setForm] = useState({username:'', password:'', passWordAgain:''})
-
+  //
   // let pattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/
   // let pattern2 = /[A-z0-9A-z]{4,8}/
-
+  //
   // function handleBlur(){
-    // if(!userName || !pattern.test(userName)){
-    //   setMessage(true)
-    // }
-    // if(!passWord || !pattern2.test(passWord)){
-    //   setMessage2(true)
-    // }
-    // if(!passWordAgain || passWordAgain !== passWord){
-    //   setMessage3(true)
-    // }
-
+  //   if(!userName || !pattern.test(userName)){
+  //     setMessage(true)
+  //   }
+  //   if(!passWord || !pattern2.test(passWord)){
+  //     setMessage2(true)
+  //   }
+  //   if(!passWordAgain || passWordAgain !== passWord){
+  //     setMessage3(true)
+  //   }
+  //
   // }
-
+  //
   // function validator(userName,passWord,passWordAgain) {
-    // if(pattern.test(userName)){
-    //   setMessage(false)
-    // }
-    // if(pattern2.test(passWord)){
-    //   setMessage2(false)
-    // }
-    // if(passWordAgain !== passWord){
-    //   setMessage3(false)
-    // }
-    // return  pattern.test(userName) && pattern2.test(passWord)
+  //   if(pattern.test(userName)){
+  //     setMessage(false)
+  //   }
+  //   if(pattern2.test(passWord)){
+  //     setMessage2(false)
+  //   }
+  //   if(passWordAgain !== passWord){
+  //     setMessage3(false)
+  //   }
+  //   return  pattern.test(userName) && pattern2.test(passWord)
   // }
-
+  //
   // const registerBtn=()=>{
-  //   console.log(PropTypes)
-    // let data = {
-    //   username: userName,
-    //   password: passWord
-    // }
-    // if(!validator(userName,passWord,passWordAgain)){
-    //   alert("帳號或密碼格式錯誤")
-    // }else if(passWordAgain !== passWord){
-    //   // showModal(true)
-    // }else {
-    //   axios.post('/api/register', data)
-    //     .then(res=>{
-    //       showModal(true)
-    //       setAlertMessage(res.data.message)
-    //       setTimeout(()=>{
-    //         showModal(false)
-    //       },3000)
-    //       history.push('/')
-    //     })
-    //     .catch(err=>{
-    //       showModal(true)
-    //       setAlertMessage(err.response.data.message)
-    //       setTimeout(()=>{
-    //         showModal(false)
-    //       },3000)
-    //     })
-    // }
-
+  //   let data = {
+  //     username: userName,
+  //     password: passWord
+  //   }
+  //   if(!validator(userName,passWord,passWordAgain)){
+  //     alert("帳號或密碼格式錯誤")
+  //   }else if(passWordAgain !== passWord){
+  //     // showModal(true)
+  //   }else {
+  //     axios.post('/api/register', data)
+  //       .then(res=>{
+  //         showModal(true)
+  //         setAlertMessage(res.data.message)
+  //         setTimeout(()=>{
+  //           showModal(false)
+  //         },3000)
+  //         history.push('/')
+  //       })
+  //       .catch(err=>{
+  //         showModal(true)
+  //         setAlertMessage(err.response.data.message)
+  //         setTimeout(()=>{
+  //           showModal(false)
+  //         },3000)
+  //       })
+  //   }
+  //
   // }
-
+  //
   // const bachToLogin=()=>{
   //  history.push('/')
   // }
-
+  //
   // return(
   //     <div className="register-wrapper min-w-300">
-  //         <Input name="user" value={form.username} setForm={setForm} />
-  //         <Input name="password" value={form.password} setForm={setForm} />
-  //         <Input name="passwordAgain" value={form.passWordAgain} setForm={setForm} />
+  //         <Input name="user" />
+  //         <Input name="password" />
+  //         <Input name="passwordAgain" />
         {/*<div className="ml-5">*帳號*/}
         {/*  <input onBlur={handleBlur} value={userName} onChange={(e)=>{setUserName(e.target.value); validator(e.target.value)}}*/}
         {/*     className="ml-5 w-60" />*/}
@@ -163,12 +167,12 @@ const Register=()=> {
         {/*  showMessage3?<p className="-mb-6 ml-40 text-red-500 text-sm">與密碼不一致</p>:''*/}
         {/*}*/}
         {/*</div>*/}
-//         <div><button className="btn btn-backToLogin" onClick={bachToLogin}>返回登入</button></div>
-//         <div><button className="btn btn-registerPage" onClick={registerBtn}>註冊</button></div>
-//       </div>
-//   )
-//
-//
-// }
+  //       <div><button className="btn btn-backToLogin" onClick={bachToLogin}>返回登入</button></div>
+  //       <div><button className="btn btn-registerPage" onClick={registerBtn}>註冊</button></div>
+  //     </div>
+  // )
+
+
+}
 
 export default Register

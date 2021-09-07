@@ -47,7 +47,7 @@ function App() {
   return (
     <div>
       {
-        auth?<HeaderPage />:''
+        login?<HeaderPage />:''
       }
       <div className="app">
         {

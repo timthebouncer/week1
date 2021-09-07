@@ -3,23 +3,25 @@ import './loginPage.css'
 import { useHistory } from "react-router-dom";
 import {useForm} from './useForm'
 import {UserContext} from '../../../store/useContext'
-
+import success from '../../../component/alert/message'
 
 const LoginPage = props =>{
   let history = useHistory();
   const [values, handleChange] = useForm({username:'',password:''})
   const [verifyType, setVerifyType] = useState('')
-  const {showVerify, setUserInfo} = props
+  const {showVerify, setUserInfo, showModal,setAlertMessage} = props
   const setInfo = useContext(UserContext)
-
+  console.log(props)
   const login=()=>{
 
     setUserInfo(values)
     if(!values.username || !values.password){
+      success.success('123')
       return
     }
     if(!verifyType){
-      alert('請先選擇驗證方式')
+      showModal(true)
+      setAlertMessage('請先選擇驗證方式')
       return
     }
 

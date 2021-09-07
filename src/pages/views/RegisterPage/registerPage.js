@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import axios from "axios";
 import './register.css'
-import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Input from "../../../component/input/input";
 import Form from "../../../component/form/index";
 import TextInput from "../../../component/form/input";
@@ -10,7 +10,7 @@ import TextInput from "../../../component/form/input";
 
 const requiredValidator = val => {
   if (!val) {
-    return ["This field is required"];
+    return ["此處為必填"];
   }
 
   return [];
@@ -18,9 +18,8 @@ const requiredValidator = val => {
 
 const passwordMatchedValidator = (val, formData) => {
   if (val !== formData.password) {
-    return ["Must match password"];
+    return ["請確認是否與密碼相同"];
   }
-
   return [];
 };
 
@@ -28,15 +27,11 @@ const passwordMatchedValidator = (val, formData) => {
 
 
 const Register=props=>{
-  let history = useHistory()
-  const bachToLogin=()=>{
-    history.push('/')
-  }
     return (
-      <div className="App">
-        <h1>Sign up</h1>
+      <div className="min-w-300 bg-gray-100">
+        <h1 className="text-center">註冊</h1>
         <div className="sign-up">
-          <Form onSubmit={data => console.log(data)}>
+          <Form className="formWrapper" onSubmit={data => console.log(data)}>
             <TextInput
               name="username"
               validators={[requiredValidator]}
@@ -57,9 +52,11 @@ const Register=props=>{
               placeholder="請確認密碼"
               label="確認密碼"
             />
-            <div><button className="btn btn-backToLogin" onClick={bachToLogin}>返回登入</button></div>
+            <div>
+                <Link className="btn btn-backToLogin" to={'/login'}>返回登入</Link>
+            </div>
             <button className="submit-btn" type="submit">
-              登入
+              註冊
             </button>
 
           </Form>

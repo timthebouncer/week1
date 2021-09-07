@@ -1,7 +1,7 @@
 import React from "react";
 import { isEmpty } from "lodash";
 import withForm from "../../component/form/withForm";
-
+import './index.css'
 
 
 const defaultProps = {
@@ -35,11 +35,11 @@ const TextInput = props => {
 
   return (
     <div>
-      <label>{props.label}</label>
+      <label className="text-left">{props.label}</label>
       <input
         name={props.name}
         type={props.type}
-        className="form-control"
+        className={`${props.name}` === 'password_confirmation' ? 'mr-7 ml-5' : 'ml-5'}
         placeholder={props.placeholder}
         onChange={onChange}
         value={props.value}

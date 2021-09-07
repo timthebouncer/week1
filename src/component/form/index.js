@@ -55,7 +55,6 @@ const Form = props => {
       },
       {}
     );
-
     if (isEmpty(formErrors)) {
       return true;
     }
@@ -68,13 +67,13 @@ const Form = props => {
     return false;
   };
 
-  const onReset = e => {
-    e.preventDefault();
-    setFormState(initState(props));
-    if (props.onReset) {
-      props.onReset();
-    }
-  };
+  // const onReset = e => {
+  //   e.preventDefault();
+  //   setFormState(initState(props));
+  //   if (props.onReset) {
+  //     props.onReset();
+  //   }
+  // };
 
   const setFieldValue = (name, value) => {
     setFormState(state => {
@@ -134,12 +133,12 @@ const Form = props => {
     setFieldValue,
     registerInput
   };
-
+  console.log(providerValue)
   return (
     <Provider value={providerValue}>
       <form
         onSubmit={onSubmit}
-        onReset={onReset}
+        // onReset={onReset}
         className={props.className}
         id={props.id}
       >
